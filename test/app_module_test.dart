@@ -4,13 +4,14 @@ import 'package:dio/dio.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter_modular/flutter_modular_test.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:github_search/app_module.dart';
-import 'package:github_search/modules/search/domain/entities/result_search.dart';
-import 'package:github_search/modules/search/domain/usecases/search_by_text.dart';
+import 'package:github_search/app/app_module.dart';
+import 'package:github_search/app/search/domain/entities/result_search.dart';
+import 'package:github_search/app/search/domain/usecases/search_by_text.dart';
 import 'package:mockito/mockito.dart';
 
-import 'modules/search/external/datasources/github_datasource_test.dart';
-import 'modules/search/utils/github_response.dart';
+import 'app/search/external/datasources/github_datasource_test.dart';
+import 'app/search/utils/github_response.dart';
+
 
 class DioMoc extends Mock implements Dio {}
 
